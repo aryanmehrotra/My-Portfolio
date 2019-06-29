@@ -1,238 +1,338 @@
 <html>
 <style>
-    body {
-        font-family: cursive;
-    }
-    
-    html {
+html {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         scroll-behavior: smooth;
     }
     
-    \ #banner-1 {
-        margin: 5mm;
-        position: relative;
+    body {
+        margin: 0
     }
     
-    .banner-1-links button {
-        float: right;
-    }
-    
-    .banner-1-links a {
-        color: #363535;
-        text-decoration: none;
-        margin-right: 10mm;
-        position: relative;
-        left: 50%;
-        font-size: 20px;
-    }
-    
-    .banner-1-links a:hover {
-        background-color: #363535;
-        color: white;
-        transition: ease-in-out;
-        transition: ease-in 1s;
-    }
-    
-    .button {
-        background-color: white;
-        border: 2px solid #363535;
-        color: #363535;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        color: #363535;
-        cursor: pointer;
-    }
-    
-    .button:hover {
-        border-color: #363535;
-    }
-    
-    #banner-2 {
-        background-color: #363535;
-        margin-top: 10mm;
-        height: 150mm;
+    #home {
+        background-color: #252934;
+        height: 961px;
+        width: 1902px;
         border: none;
     }
     
-    #banner-2-text {
+    #home_head {
         color: white;
         text-align: center;
-        font-size: 15mm;
         position: relative;
-        top: 50mm;
+        padding-top: 400px;
+        font-size: 50px;
     }
     
-    #banner-3 {
-        background-color: #f8f8f8;
-        width: 100%;
-        position: relative;
-        top: 120mm;
-        height: 150mm;
-    }
-    
-    #banner-3-text {
-        text-align: center;
-        position: relative;
-        top: 10mm;
-    }
-    
-    #banner-3-text h1 {
-        color: #363535;
-    }
-    
-    #portfolio-text {
-        color: grey;
-        font-size: 7mm;
+    #home-button {
+        border-color: white;
+        font-size: 40px;
+        height: 65px;
+        width: 300px;
+        margin-top: 60px;
         text-align: center;
     }
     
-    #banner-4 {}
-    
-    #banner-5 {
-        background-color: #5B84B1FF;
-        width: 100%;
-        position: relative;
-        top: 110mm;
-        height: 150mm;
+    #home-button:hover {
+        background-color: #04C2C9;
+        transition: ease;
+        transition-duration: .5s;
+        border-color: #04C2C9;
+        box-shadow: inset 0 0 0 25px #53a7ea;
+        border-radius: 50%;
     }
     
-    #banner-5-text {
-        text-align: center;
+    #header {
+        background-color: #1B242F;
         position: relative;
-        top: 10mm;
+    }
+    
+    .flex-container {
         color: white;
-    }
-    
-    #banner-5-text h3 {
-        font-weight: normal;
-        font-size: 20mm;
-    }
-    
-    #banner-6 {
-        background-color: #FC766AFF;
-        width: 100%;
+        display: flex;
+        height: 30px;
         position: relative;
-        top: 100mm;
-        height: 150mm;
+        padding-left: 300px;
+        font-size: 15px;
+        padding-top: 10px;
     }
     
-    #banner-6-text {
-        text-align: center;
-        position: relative;
-        top: 10mm;
-        color: white;
-        font-size: 7mm
+    .header-option {
+        margin-right: 30px
     }
     
-    #get-in-touch {
-        background-color: #D24D57;
-        border: 1px solid white;
-        font-weight: bold;
-        font-size: 14px;
-        padding: 5px;
-        margin-top: 10mm;
-        float: center;
-        height: 15mm;
-        width: 50mm;
-        font-size: 7mm;
-        color: white;
-        font-weight: normal;
-    }
-    
-    #banner-6-links {
-        margin-top: 10mm;
-        float: center;
-    }
-    
-    #banner-6-links a {
+    #header a {
         color: white;
         text-decoration: none;
-        padding: 20px;
+        display: block;
     }
     
-    #banner-6-links-wb a {
-        border-right: 1px solid white;
+    #header a:hover {
+        color: #E31B6D;
+        transition: 1s;
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
     }
     
-    #banner-7 {
-        background-color: #363535;
-        width: 100%;
-        position: relative;
-        top: 100mm;
-        height: 30mm;
+    #about-head {
+        text-align: center;
+        color: #45474A;
+        text-decoration: #45474A underline;
     }
+    
+    #portfolio {
+        background-color: #F5F5F5;
+    }
+    
+    #portfolio-head {
+        text-align: center;
+        color: #45474A;
+        text-decoration: #45474A underline;
+    }
+    
+    .active {
+        background-color: #E31B6D;
+    }
+    
+    #contact {
+        background-color: #252934;
+        height: 661px;
+    }
+    
+    #contact-head {
+        text-align: center;
+        color: white;
+        padding-top: 5px;
+        text-decoration: underline white;
+    }
+    
+    #contact-head-h3 {
+        text-align: center;
+        color: #04C1C8;
+        font-style: normal;
+    }
+    
+    input {
+        height: 35px;
+        width: 500px;
+        background-color: #1E242C;
+        color: white;
+        border-color: #1E242C;
+        margin-bottom: 5px;
+    }
+    
+    #contact-head-h3-submit {
+        width: 100px;
+        border-color: white;
+        margin-left: 400px;
+    }
+    
+    #contact-head-h3-submit:hover {
+        BORDER-color: #04C2C9;
+        background-color: #04C2C9;
+        font-weight: bold;
+    }
+    
+    #contact-head-h3-input {
+        text-align: center;
+    }
+    
+    #contact-head-h3-input-B {
+        height: 100px;
+    }
+    
+    #end-of-page {
+        height: 313px;
+        background-color: #1B242F;
+        text-align: center;
+    }
+    
+    #end-of-page-handle {
+        padding-top: 100px;
+        height: 50%;
+    }
+}
 </style>
 
 <head>
-    <title>Aryan Mehrotra</title>
 
     <body>
-        <div id="banner-1">
-            <div class="banner-1-links">
-                <a href="#banner-3-text" class="button">PORTFOLIO</a>
-                <a href="" class="button">RECENT WORK</a>
-                <a href="#banner-5-text" class="button">ABOUT</a>
-                <a href="#banner-7" class="button">CONTACT</a>
+        <div>
 
-            </div>
-        </div>
-        <div id="banner-2">
-            <div id="banner-2-text">
 
-                <h1>ARYAN MEHROTRA</1>
-
-            </div>
-            <div id="banner-3">
-                <div id="banner-3-text">
-
-                    <h1>PORTFOLIO</h1>
-                    <span id="portfolio-text">
-                    <h3>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development.</h3>
-                    </span>
+            <div id=home>
+                <div id=Home_head class=head>
+                    Hello, I'm <span class:name style="color:#E31B6D" ;>Aryan Mehrotra</span> <br> I'm learning web-development.
+                    <br>
+                    <input id=home-button type="submit" value="Veiw My Work" onclick="window.location.href='#header'" />
                 </div>
+            </div>
+
+            <div id=header class="flex-container">
+                <a href="#home" class="header-option">HOME</a>
+                <a href="#about" class="header-option">ABOUT</a>
+                <a href="#portfolio" class="header-option">PORTFOLIO</a>
+                <a href="#contact" class="header-option">CONTACT</a>
 
 
             </div>
-            <div id="banner-4">
+            <div id=about>
+                <div id="about-head">
+                    <h1>ABOUT</h1>
+                    <p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
 
-            </div>
-            <div id="banner-5">
-                <div id="banner-5-text">
-
-                    <head>ABOUT ME
-
-                        <head>
-                            <h3>I'm web designer & front-end developer.</h3>
                 </div>
-
-            </div>
-            <div id="banner-6">
-                <div id="banner-6-text">
-
-                    <head>OK, LET’S CREATE<br>SOMETHING GREAT</head>
-                    <h3>If you like my work and have some cool project to work on,<br> just send me direct message or contact me through social sites listed below.</h3>
-                    <div id="get-in-touch-box">
-                        <input id="get-in-touch" class="button" type="submit" value="Get In Touch">
+                <div id=portfolio>
+                    <div id="portfolio-head">
+                        <h1>PROJECTS</h1>
+                        <p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
                     </div>
-                    <div id="banner-6-links">
-                        <span id="banner-6-links-wb">
-                        <a href="">Facebook</a>
-                        </span>
-                        <a href="">Instagram</a>
+                    <div id=contact>
+                        <diV id=contact-head>
+                            <h1>CONTACT</h1>
+                            <br>
+                            <br>
+                            <br>
+                        </diV>
+                        <div id="contact-head-h3">
+                            <h3>Have a question or want to work together?</h3>
+                        </div>
+                        <div id=contact-head-h3-input>
+                            <form>
+                                <input id=contact-head-h3-input-A type="text" placeholder="Name">
+                                <br>
+                                <input id=contact-head-h3-input-A type="text" placeholder="Enter Email">
+                                <br>
+                                <input id=contact-head-h3-input-B type="text" placeholder="Your message">
+                                <br>
+                                <input id=contact-head-h3-submit type="submit" value="SUBMIT">
+                            </form>
+                        </div>
                     </div>
+                    <div>
+                        <div id=end-of-page>
+                            <div id=end-of-page-handle>
+                                <img src="linkedin.png" width="100px" height="100px">
+                                <img src="facebook.png" width="100px" height="100px">
+                                <img src="instagram.png" width="100px" height="100px">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
-            <div id="banner-7">
-                <div id="banner-7-imgs">
-                </div>
-            </div>
 
+
+
+            </div>
     </body>
-    </head>
+</head>
 
 </html>
